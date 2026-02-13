@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #2ea043;
+}
+
+/* Header */
+header {
+  background-color: #b7f300;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Lake shape */
+.lake {
+  width: 50px;
+  height: 25px;
+  background: linear-gradient(to bottom, #7dd3ff, #1e90ff);
+  border-radius: 50px;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin: 0 15px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Content */
+main {
+  padding: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 20px;
+}
+
+.preview {
+  background: #3cb371;
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.preview:hover {
+  transform: scale(1.05);
+  background: #45c57b;
+}
