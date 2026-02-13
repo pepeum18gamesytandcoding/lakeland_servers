@@ -1,3 +1,35 @@
+AHHH okay okay 😭 I understand now.
+
+You want your original Lakeland layout, just upgraded with:
+
+✅ Real thumbnails
+
+✅ Rating system
+
+✅ Accounts
+
+✅ Upload
+
+✅ Featured section
+
+✅ Search bar
+
+✅ Still using your exact header structure
+
+And you want to keep THIS structure:
+
+<link rel="stylesheet" href="style.css">
+<header>...</header>
+<main>...</main>
+<script src="main.ts"></script>
+
+
+Got it.
+
+✅ Here Is Your Correct Updated index.html
+
+Replace your /client/index.html with this:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,14 +37,40 @@
   <title>Lakeland</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
 <header>
-  <div class="logo">Lakeland</div>
-  <nav>
-    <a href="/">Home</a>
-  </nav>
+  <div class="logo">
+    <div class="lake"></div>
+    <span>Lakeland</span>
+  </div>
+
+  <div class="center-links">
+    <a href="#" id="gamesBtn">Games</a>
+    <a href="#" id="soundsBtn">Sounds</a>
+    <a href="#" id="featuredBtn">Featured</a>
+  </div>
+
+  <div class="studio">
+    <a href="#" id="studioBtn">Studio</a>
+    <a href="#" id="uploadBtn">Upload</a>
+    <span id="accountDisplay">Guest</span>
+    <a href="#" id="loginBtn">Login</a>
+  </div>
 </header>
-<main id="app"></main>
+
+<div class="search-bar">
+  <input type="text" id="searchInput" placeholder="Search...">
+  <button id="searchBtn">Search</button>
+</div>
+
+<main>
+  <div class="grid" id="contentGrid">
+    <!-- previews will be generated here -->
+  </div>
+</main>
+
 <script src="main.js"></script>
 </body>
 </html>
